@@ -22,5 +22,5 @@ jobs:
                   myToken: ${{secrets.GITHUB_TOKEN}}
             - uses: actions/upload-artifact@v3
               with:
-                  name: FairSECO Result
-                  path: .FairSECO/
+                  name: FAIRSECO Result
+                  path: .FAIRSECO/
