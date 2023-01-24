@@ -9,9 +9,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - uses: actions/checkout@v3
-              with:
-                  repository: QDUNI/FairSECO@dev
             - uses: tortellini-tools/action@v3
             - uses: actions/upload-artifact@v3
               with:
@@ -20,7 +17,7 @@ jobs:
             - uses: anchore/sbom-action@v0
               with:
                   artifact-name: SBOM.spdx # Output is in JSON format
-            - uses: QDUNI/FairSECO@dev
+            - uses: QDUNI/FairSECO@dev-test
               with:
                   myToken: ${{secrets.GITHUB_TOKEN}}
             - uses: actions/upload-artifact@v3
