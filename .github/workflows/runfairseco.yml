@@ -9,6 +9,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
+            - uses: actions/checkout@v3
+              with:
+                  repository: QDUNI/FairSECO@dev
             - uses: tortellini-tools/action@v3
             - uses: actions/upload-artifact@v3
               with:
