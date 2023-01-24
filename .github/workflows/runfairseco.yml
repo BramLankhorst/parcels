@@ -17,6 +17,9 @@ jobs:
             - uses: anchore/sbom-action@v0
               with:
                   artifact-name: SBOM.spdx # Output is in JSON format
+            - uses: actions/checkout@v3
+              with:
+                  path: QDUNI/FairSECO@dev
             - uses: QDUNI/FairSECO@dev-test
               with:
                   myToken: ${{secrets.GITHUB_TOKEN}}
