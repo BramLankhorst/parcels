@@ -33,7 +33,7 @@ jobs:
                 repository: QDUNI/FairSECO
                 path: FAIRSECO_Assets
                 ref: 'dev'
-            - uses: QDUNI/FairSECO@main
+            - uses: QDUNI/FairSECO@dev
               with:
                   myToken: ${{ secrets.GITHUB_TOKEN }}
             - uses: actions/upload-artifact@v3
